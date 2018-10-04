@@ -21,7 +21,6 @@ Now that we have introduced NumPy, let's put it to practice. In this lab, we are
 
 ```python
 #Your code here
-import numpy as np
 ```
 
 # Generating Some Mock Data
@@ -38,10 +37,7 @@ Finally, use the list and range to create NumPy arrays and assign the array from
 
 
 ```python
-py_list = [0,1,2,3,4]
-py_range = range(0,5)
-array_from_list = np.array(py_list)
-array_from_range = np.array(py_range)
+#Your code here
 ```
 
 Next, we have a list of heights and weights and we'd like to use them to create a collection of BMIs. However, they are both in inches and pounds (imperial system), respectively. 
@@ -60,8 +56,6 @@ Let's use what we know to create NumPy arrays with the metric equivalent values,
 list_height_inches = [65, 68, 73, 75, 78]
 
 #Your code here
-array_height_inches = np.array(list_height_inches)
-array_height_meters = array_height_inches * 0.0254
 ```
 
 
@@ -70,8 +64,6 @@ array_height_meters = array_height_inches * 0.0254
 list_weight_pounds = [150, 140, 220, 205, 265]
 
 #your code here
-array_weight_pounds = np.array(list_weight_pounds)
-array_weight_kg = array_weight_pounds / 2.2046
 ```
 
 The metric formula for calculating BMI is as follows:
@@ -86,7 +78,7 @@ Use the BMI calculation to create a NumPy array of BMIs
 
 
 ```python
-BMI_array = array_weight_kg / (array_height_meters * array_height_meters)
+#Your code here
 ```
 
 # Create an identity vector using np.ones()
@@ -108,11 +100,6 @@ The pandas library that we've been using is built on top of NumPy; all columns/s
 
 
 ```python
-import numpy as np
-```
-
-
-```python
 #Open a text file (csv files are just plaintext seperated by commas)
 f = open('bp.txt')
 n_rows = len(f.readlines())
@@ -121,70 +108,16 @@ f = open('bp.txt') #After using readlines, we must reopen the file
 n_cols = (len(f.readline().split('\t'))) #The file has values seperated by tabs; we read the first line and check it's length.
 
 f = open('bp.txt')
-#Your code here
 
+#Your code here
+#Pseudocode outline below
 #1) Create a matrix of zeros that is the same size of the file
-matrix = np.zeros([n_rows, n_cols])
-#2) Iterate through the file: "for line in f:"
-for n, line in enumerate(f):
+#2) Iterate through the file: "for line in f:" Hint: using enumerate will also be required
     #3) Update each row of the matrix with the new stream of data
     #Hint: skip the first row (its just column names, not the data.)
-    if n > 0:
-        matrix[n,:] = line.split('\t')
 #4) Preview your results; you should now have a NumPy matrix with the data from the file
-matrix
+
 ```
-
-    The file has 21 lines.
-
-
-
-
-
-    array([[   0.  ,    0.  ,    0.  ,    0.  ,    0.  ,    0.  ,    0.  ,
-               0.  ],
-           [   1.  ,  105.  ,   47.  ,   85.4 ,    1.75,    5.1 ,   63.  ,
-              33.  ],
-           [   2.  ,  115.  ,   49.  ,   94.2 ,    2.1 ,    3.8 ,   70.  ,
-              14.  ],
-           [   3.  ,  116.  ,   49.  ,   95.3 ,    1.98,    8.2 ,   72.  ,
-              10.  ],
-           [   4.  ,  117.  ,   50.  ,   94.7 ,    2.01,    5.8 ,   73.  ,
-              99.  ],
-           [   5.  ,  112.  ,   51.  ,   89.4 ,    1.89,    7.  ,   72.  ,
-              95.  ],
-           [   6.  ,  121.  ,   48.  ,   99.5 ,    2.25,    9.3 ,   71.  ,
-              10.  ],
-           [   7.  ,  121.  ,   49.  ,   99.8 ,    2.25,    2.5 ,   69.  ,
-              42.  ],
-           [   8.  ,  110.  ,   47.  ,   90.9 ,    1.9 ,    6.2 ,   66.  ,
-               8.  ],
-           [   9.  ,  110.  ,   49.  ,   89.2 ,    1.83,    7.1 ,   69.  ,
-              62.  ],
-           [  10.  ,  114.  ,   48.  ,   92.7 ,    2.07,    5.6 ,   64.  ,
-              35.  ],
-           [  11.  ,  114.  ,   47.  ,   94.4 ,    2.07,    5.3 ,   74.  ,
-              90.  ],
-           [  12.  ,  115.  ,   49.  ,   94.1 ,    1.98,    5.6 ,   71.  ,
-              21.  ],
-           [  13.  ,  114.  ,   50.  ,   91.6 ,    2.05,   10.2 ,   68.  ,
-              47.  ],
-           [  14.  ,  106.  ,   45.  ,   87.1 ,    1.92,    5.6 ,   67.  ,
-              80.  ],
-           [  15.  ,  125.  ,   52.  ,  101.3 ,    2.19,   10.  ,   76.  ,
-              98.  ],
-           [  16.  ,  114.  ,   46.  ,   94.5 ,    1.98,    7.4 ,   69.  ,
-              95.  ],
-           [  17.  ,  106.  ,   46.  ,   87.  ,    1.87,    3.6 ,   62.  ,
-              18.  ],
-           [  18.  ,  113.  ,   46.  ,   94.5 ,    1.9 ,    4.3 ,   70.  ,
-              12.  ],
-           [  19.  ,  110.  ,   48.  ,   90.5 ,    1.88,    9.  ,   71.  ,
-              99.  ],
-           [  20.  ,  122.  ,   56.  ,   95.7 ,    2.09,    7.  ,   75.  ,
-              99.  ]])
-
-
 
 ## Summary
 
