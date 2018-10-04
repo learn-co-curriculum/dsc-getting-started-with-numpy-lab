@@ -58,6 +58,8 @@ Let's use what we know to create NumPy arrays with the metric equivalent values,
 ```python
 # use the conversion rate for turning height in inches to meters
 list_height_inches = [65, 68, 73, 75, 78]
+
+#Your code here
 array_height_inches = np.array(list_height_inches)
 array_height_meters = array_height_inches * 0.0254
 ```
@@ -66,6 +68,8 @@ array_height_meters = array_height_inches * 0.0254
 ```python
 # use the conversion rate for turning weight in pounds to kilograms
 list_weight_pounds = [150, 140, 220, 205, 265]
+
+#your code here
 array_weight_pounds = np.array(list_weight_pounds)
 array_weight_kg = array_weight_pounds / 2.2046
 ```
