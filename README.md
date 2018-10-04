@@ -94,22 +94,34 @@ BMI_array = array_weight_kg / (array_height_meters * array_height_meters)
 
 ```python
 #Your code here
+identity = np.ones(len(BMI_array))
+identity
 ```
+
+
+
+
+    array([ 1.,  1.,  1.,  1.,  1.])
+
+
 
 # Multiply the BMI_array by your identity vector
 
 
 ```python
 #Your code here
+BMI_array * identity
 ```
+
+
+
+
+    array([ 24.9613063 ,  21.28692715,  29.02550097,  25.62324316,  30.62382485])
+
+
 
 # Level - Up: Using NumPy to Parse a File
 The pandas library that we've been using is built on top of NumPy; all columns/series in a Pandas DataFrame are built using NumPy arrays. To get a better idea of a how a built in method like pd.read_csv() works, we'll try and recreate that here!
-
-
-```python
-import numpy as np
-```
 
 
 ```python
