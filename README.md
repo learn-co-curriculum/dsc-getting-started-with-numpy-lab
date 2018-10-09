@@ -1,22 +1,20 @@
 
-# NumPy Lab
+# Getting Started with NumPy - Lab
 
 ## Introduction
 
 Now that we have introduced NumPy, let's put it to practice. In this lab, we are going to be creating arrays, performing operations on them, and returning new array all using the NumPy library. Let's get started!
 
 ## Objectives
-* Know that numpy is imported as np: import numpy as np
-* Understand how to initialize numpy arrays from nested Python lists, and access elements using square brackets
-* Understand the shape attribute on numpy arrays
-* Understand how to create arrays from scratch including Np.zeros, np.ones, np.full
-* Learn how to do indexing in arrays
-    * Slicing
-    * Integer indexing
-    * Boolean indexing
-* Learn to perform scalar and vector math
 
-# Import NumPy under the standard alias
+You will be able to: 
+
+* Understand how to initialize NumPy arrays from nested Python lists, and access elements using square brackets
+* Understand the shape attribute on NumPy arrays
+* Understand how to create arrays from scratch including np.zeros, np.ones, np.full
+* Learn to perform scalar and vector math  
+
+## Import NumPy under the standard alias
 
 
 ```python
@@ -24,7 +22,7 @@ Now that we have introduced NumPy, let's put it to practice. In this lab, we are
 import numpy as np
 ```
 
-# Generating Some Mock Data
+## Generating Some Mock Data
 
 Create a NumPy Array for each of the following:
     1. Using a range
@@ -89,7 +87,7 @@ Use the BMI calculation to create a NumPy array of BMIs
 BMI_array = array_weight_kg / (array_height_meters * array_height_meters)
 ```
 
-# Create an identity vector using np.ones()
+## Create an identity vector using np.ones()
 
 
 ```python
@@ -105,7 +103,7 @@ identity
 
 
 
-# Multiply the BMI_array by your identity vector
+## Multiply the BMI_array by your identity vector
 
 
 ```python
@@ -120,7 +118,7 @@ BMI_array * identity
 
 
 
-# Level - Up: Using NumPy to Parse a File
+## Level Up: Using NumPy to Parse a File
 The pandas library that we've been using is built on top of NumPy; all columns/series in a Pandas DataFrame are built using NumPy arrays. To get a better idea of a how a built in method like pd.read_csv() works, we'll try and recreate that here!
 
 
