@@ -98,12 +98,12 @@ The pandas library that we've been using is built on top of NumPy; all columns/s
 
 
 ```python
-#Open a text file (csv files are just plaintext seperated by commas)
+#Open a text file (csv files are just plaintext separated by commas)
 f = open('bp.txt')
 n_rows = len(f.readlines())
 print('The file has {} lines.'.format(n_rows)) #Print number of lines in the file
 f = open('bp.txt') #After using readlines, we must reopen the file
-n_cols = (len(f.readline().split('\t'))) #The file has values seperated by tabs; we read the first line and check it's length.
+n_cols = (len(f.readline().split('\t'))) #The file has values separated by tabs; we read the first line and check it's length.
 
 f = open('bp.txt')
 
@@ -112,11 +112,11 @@ f = open('bp.txt')
 #1) Create a matrix of zeros that is the same size of the file
 #2) Iterate through the file: "for line in f:" Hint: using enumerate will also be required
     #3) Update each row of the matrix with the new stream of data
-    #Hint: skip the first row (its just column names, not the data.)
+    #Hint: skip the first row (it's just column names, not the data.)
 #4) Preview your results; you should now have a NumPy matrix with the data from the file
 
 ```
 
 ## Summary
 
-In this lab, we practiced creating NumPy arrays from both lists and rages. We then practiced peforming math operations like converting imperial measurements to metric measurements on each element of a NumPy array to create new arrays with new values. Finally, we used both of our new NumPy arrays to operate on eachother and create new arrays containing the BMIs from our arrays containing heights and weights.
+In this lab, we practiced creating NumPy arrays from both lists and rages. We then practiced performing math operations like converting imperial measurements to metric measurements on each element of a NumPy array to create new arrays with new values. Finally, we used both of our new NumPy arrays to operate on each other and create new arrays containing the BMIs from our arrays containing heights and weights.
