@@ -87,7 +87,7 @@ Use the BMI calculation to create a NumPy array of BMIs
 BMI_array = array_weight_kg / (array_height_meters * array_height_meters)
 ```
 
-## Create an identity vector using np.ones()
+## Create an identity vector using `np.ones()`
 
 
 ```python
@@ -146,7 +146,7 @@ matrix
 ```
 
     The file has 21 lines.
-    
+
 
 
 
@@ -198,4 +198,4 @@ matrix
 
 ## Summary
 
-In this lab, we practiced creating NumPy arrays from both lists and rages. We then practiced performing math operations like converting imperial measurements to metric measurements on each element of a NumPy array to create new arrays with new values. Finally, we used both of our new NumPy arrays to operate on each other and create new arrays containing the BMIs from our arrays containing heights and weights.
+In this lab, we practiced creating NumPy arrays from both lists and ranges. We then practiced performing math operations like converting imperial measurements to metric measurements on each element of a NumPy array to create new arrays with new values. Finally, we used both of our new NumPy arrays to operate on each other and create new arrays containing the BMIs from our arrays containing heights and weights.
