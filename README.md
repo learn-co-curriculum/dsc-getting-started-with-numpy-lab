@@ -79,14 +79,15 @@ Use the BMI calculation to create a NumPy array of BMIs
 #Your code here
 ```
 
-## Create an identity vector using `np.ones()`
+## Create a vector of ones the same size as your BMI vector using `np.ones()`
 
 
 ```python
 #Your code here
 ```
 
-## Multiply the BMI_array by your identity vector
+## Multiply the BMI_array by your vector of ones
+The resulting product should have the same values as your original BMI numpy array
 
 
 ```python
