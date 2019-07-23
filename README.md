@@ -87,7 +87,7 @@ Use the BMI calculation to create a NumPy array of BMIs
 BMI_array = array_weight_kg / (array_height_meters * array_height_meters)
 ```
 
-## Create an identity vector using `np.ones()`
+## Create a vector of ones the same size as your BMI vector using `np.ones()` 
 
 
 ```python
@@ -99,11 +99,12 @@ identity
 
 
 
-    array([ 1.,  1.,  1.,  1.,  1.])
+    array([1., 1., 1., 1., 1.])
 
 
 
-## Multiply the BMI_array by your identity vector
+## Multiply the BMI_array by your vector of ones
+The resulting product should have the same values as your original BMI numpy array
 
 
 ```python
