@@ -3,13 +3,13 @@
 
 ## Introduction
 
-Now that we have introduced NumPy, let's put it to practice. In this lab, we are going to be creating arrays, performing operations on them, and returning new array all using the NumPy library. Let's get started!
+Now that we have introduced NumPy, let's put it to practice. In this lab, we are going to be creating arrays, performing operations on them, and returning new arrays all using the NumPy library. Let's get started!
 
 ## Objectives
 
 You will be able to: 
 
-* Understand how to initialize NumPy arrays from nested Python lists, and access elements using square brackets
+* Understand how to initialize NumPy arrays from nested Python lists and access elements using square brackets
 * Understand the shape attribute on NumPy arrays
 * Understand how to create arrays from scratch including np.zeros, np.ones, np.full
 * Learn to perform scalar and vector math  
@@ -68,7 +68,7 @@ The metric formula for calculating BMI is as follows:
 
 > BMI = weight (kg) ÷ height^2 (m^2)
 
-So, to get BMI we divide weight by the squared value of height. For example, if i weighed 130kg and was 1.9 meters tall, the calculation would look like:
+So, to get BMI we divide weight by the squared value of height. For example, if I weighed 130kg and was 1.9 meters tall, the calculation would look like:
 
 > BMI = 130 / (1.9*1.9)
 
@@ -95,7 +95,7 @@ The resulting product should have the same values as your original BMI numpy arr
 ```
 
 ## Level Up: Using NumPy to Parse a File
-The pandas library that we've been using is built on top of NumPy; all columns/series in a Pandas DataFrame are built using NumPy arrays. To get a better idea of a how a built in method like pd.read_csv() works, we'll try and recreate that here!
+The pandas library that we've been using is built on top of NumPy; all columns/series in a Pandas DataFrame are built using NumPy arrays. To get a better idea of a how a built-in method like pd.read_csv() works, we'll try and recreate that here!
 
 
 ```python
