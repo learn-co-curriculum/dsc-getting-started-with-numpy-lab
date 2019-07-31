@@ -87,7 +87,7 @@ Use the BMI calculation to create a NumPy array of BMIs
 BMI_array = array_weight_kg / (array_height_meters * array_height_meters)
 ```
 
-## Create a vector of ones the same size as your BMI vector using `np.ones()` 
+## Create a vector of ones the same size as your BMI vector using `np.ones()`
 
 
 ```python
