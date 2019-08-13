@@ -14,11 +14,11 @@ You will be able to:
 * Understand how to create arrays from scratch including np.zeros, np.ones, np.full
 * Learn to perform scalar and vector math  
 
-## Import NumPy under the standard alias
+## Import `NumPy` under the standard alias
 
 
 ```python
-#Your code here
+# Your code here
 ```
 
 ## Generating Some Mock Data
@@ -117,6 +117,9 @@ f = open('bp.txt')
 #4) Preview your results; you should now have a NumPy matrix with the data from the file
 
 ```
+
+    The file has 21 lines.
+
 
 ## Summary
 
