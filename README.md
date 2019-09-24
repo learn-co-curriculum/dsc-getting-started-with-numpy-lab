@@ -9,9 +9,8 @@ Now that we have introduced NumPy, let's put it to practice. In this lab, we are
 
 You will be able to: 
 
-* Understand how to initialize NumPy arrays from nested Python lists and access elements using square brackets
-* Understand the shape attribute on NumPy arrays
-* Understand how to create arrays from scratch including np.zeros, np.ones, np.full
+* Initialize NumPy arrays from nested Python lists and access elements using square brackets 
+* Create arrays from scratch using `np.zeros()` and `np.ones()` 
 * Learn to perform scalar and vector math  
 
 ## Import `NumPy` under the standard alias
@@ -23,9 +22,9 @@ import numpy as np
 
 ## Generating Some Mock Data
 
-Create a NumPy Array for each of the following:
+Create a NumPy array for each of the following:
     1. Using a range
-    2. Using a Python List
+    2. Using a Python list
     
 Below, create a list in Python that has 5 elements (i.e. [0,1,2,3,4]) and assign it to the variable `py_list`. 
 
@@ -119,7 +118,7 @@ BMI_array * identity
 
 
 ## Level Up: Using NumPy to Parse a File
-The pandas library that we've been using is built on top of NumPy; all columns/series in a Pandas DataFrame are built using NumPy arrays. To get a better idea of a how a built-in method like pd.read_csv() works, we'll try and recreate that here!
+The Pandas library that we've been using is built on top of NumPy; all columns/series in a Pandas DataFrame are built using NumPy arrays. To get a better idea of a how a built-in method like `pd.read_csv()` works, we'll try and recreate that here!
 
 
 ```python
