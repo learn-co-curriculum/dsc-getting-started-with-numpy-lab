@@ -9,9 +9,9 @@ Now that we have introduced NumPy, let's put it to practice. In this lab, we are
 
 You will be able to: 
 
-* Initialize NumPy arrays from nested Python lists and access elements using square brackets 
-* Create arrays from scratch using `np.zeros()` and `np.ones()` 
-* Learn to perform scalar and vector math  
+- Initialize NumPy arrays from nested Python lists and access elements using square brackets 
+- Create arrays from scratch using `np.zeros()` and `np.ones()` 
+- Learn to perform scalar and vector math  
 
 ## Import `NumPy` under the standard alias
 
@@ -45,7 +45,7 @@ array_from_range = None
 
 Next, we have a list of heights and weights and we'd like to use them to create a collection of BMIs. However, they are both in inches and pounds (imperial system), respectively. 
 
-Let's use what we know to create NumPy arrays with the metric equivalent values, (height in meters & weight in kg).
+Let's use what we know to create NumPy arrays with the metric equivalent values (height in meters & weight in kg).
 
 > **Remember:** *NumPy can make these calculations a lot easier and with less code than a list!*
 
@@ -99,7 +99,7 @@ identity
 ```
 
 ## Multiply the BMI_array by your vector of ones
-The resulting product should have the same values as your original BMI numpy array
+The resulting product should have the same values as your original BMI numpy array.
 
 
 ```python
