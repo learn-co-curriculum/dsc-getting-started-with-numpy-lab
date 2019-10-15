@@ -3,24 +3,25 @@
 
 ## Introduction
 
-Now that we have introduced NumPy, let's put it to practice. In this lab, we are going to be creating arrays, performing operations on them, and returning new arrays all using the NumPy library. Let's get started!
+Now that we have introduced NumPy, let's put it to practice. In this lab, you are going to be creating arrays, performing operations on them, and returning new arrays all using the NumPy library. Let's get started!
 
 ## Objectives
 
 You will be able to: 
 
-- Initialize NumPy arrays from nested Python lists and access elements using square brackets 
-- Create arrays from scratch using `np.zeros()` and `np.ones()` 
-- Learn to perform scalar and vector math  
+- Instantiate a numpy array with specified values 
+- Use broadcasting to perform a math operation on an entire numpy array 
+
 
 ## Import `NumPy` under the standard alias
 
 
 ```python
+# Import numpy using the standard alias
 import numpy as np
 ```
 
-## Generating Some Mock Data
+## Generate some mock data
 
 Create a NumPy array for each of the following:
     1. Using a range
@@ -34,8 +35,8 @@ Finally, use the list and range to create NumPy arrays and assign the array from
 
 
 ```python
-py_list = [0,1,2,3,4]
-py_range = range(0,5)
+py_list = [0, 1, 2, 3, 4]
+py_range = range(0, 5)
 array_from_list = np.array(py_list)
 array_from_range = np.array(py_range)
 ```
@@ -52,20 +53,20 @@ Let's use what we know to create NumPy arrays with the metric equivalent values 
 
 
 ```python
-# use the conversion rate for turning height in inches to meters
+# Use the conversion rate for turning height in inches to meters
 list_height_inches = [65, 68, 73, 75, 78]
 
-#Your code here
+# Your code here
 array_height_inches = np.array(list_height_inches)
 array_height_meters = array_height_inches * 0.0254
 ```
 
 
 ```python
-# use the conversion rate for turning weight in pounds to kilograms
+# Use the conversion rate for turning weight in pounds to kilograms
 list_weight_pounds = [150, 140, 220, 205, 265]
 
-#your code here
+# Your code here
 array_weight_pounds = np.array(list_weight_pounds)
 array_weight_kg = array_weight_pounds / 2.2046
 ```
@@ -89,7 +90,6 @@ BMI_array = array_weight_kg / (array_height_meters * array_height_meters)
 
 
 ```python
-#Your code here
 identity = np.ones(len(BMI_array))
 identity
 ```
@@ -106,7 +106,6 @@ The resulting product should have the same values as your original BMI numpy arr
 
 
 ```python
-#Your code here
 BMI_array * identity
 ```
 
@@ -122,15 +121,18 @@ The Pandas library that we've been using is built on top of NumPy; all columns/s
 
 
 ```python
-#Open a text file (csv files are just plaintext separated by commas)
+# Open a text file (csv files are just plaintext separated by commas)
 f = open('bp.txt')
 n_rows = len(f.readlines())
-print('The file has {} lines.'.format(n_rows)) #Print number of lines in the file
-f = open('bp.txt') #After using readlines, we must reopen the file
-n_cols = (len(f.readline().split('\t'))) #The file has values separated by tabs; we read the first line and check it's length.
+# Print number of lines in the file
+print('The file has {} lines.'.format(n_rows))
+# After using readlines, we must reopen the file
+f = open('bp.txt') 
+# The file has values separated by tabs; we read the first line and check it's length 
+n_cols = (len(f.readline().split('\t')))
 
 f = open('bp.txt')
-#Your code here
+# Your code here
 
 #1) Create a matrix of zeros that is the same size of the file
 matrix = np.zeros([n_rows, n_cols])
