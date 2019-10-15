@@ -3,26 +3,25 @@
 
 ## Introduction
 
-Now that we have introduced NumPy, let's put it to practice. In this lab, we are going to be creating arrays, performing operations on them, and returning new arrays all using the NumPy library. Let's get started!
+Now that we have introduced NumPy, let's put it to practice. In this lab, you are going to be creating arrays, performing operations on them, and returning new arrays all using the NumPy library. Let's get started!
 
 ## Objectives
 
 You will be able to: 
 
-- Initialize NumPy arrays from nested Python lists and access elements using square brackets 
-- Create arrays from scratch using `np.zeros()` and `np.ones()` 
-- Learn to perform scalar and vector math  
+- Instantiate a numpy array with specified values 
+- Use broadcasting to perform a math operation on an entire numpy array 
+
 
 ## Import `NumPy` under the standard alias
 
 
 ```python
 # Import numpy using the standard alias
-# Your code here
 
 ```
 
-## Generating Some Mock Data
+## Generate some mock data
 
 Create a NumPy array for each of the following:
     1. Using a range
@@ -36,7 +35,7 @@ Finally, use the list and range to create NumPy arrays and assign the array from
 
 
 ```python
-#Your code here
+# Your code here
 py_list = None
 py_range = None
 array_from_list = None
@@ -55,20 +54,20 @@ Let's use what we know to create NumPy arrays with the metric equivalent values 
 
 
 ```python
-# use the conversion rate for turning height in inches to meters
+# Use the conversion rate for turning height in inches to meters
 list_height_inches = [65, 68, 73, 75, 78]
 
-#Your code here
+# Your code here
 array_height_inches = None
 array_height_meters = None
 ```
 
 
 ```python
-# use the conversion rate for turning weight in pounds to kilograms
+# Use the conversion rate for turning weight in pounds to kilograms
 list_weight_pounds = [150, 140, 220, 205, 265]
 
-#your code here
+# Your code here
 array_weight_pounds = None
 array_weight_kg = None
 ```
@@ -85,7 +84,7 @@ Use the BMI calculation to create a NumPy array of BMIs
 
 
 ```python
-#Your code here
+# Your code here
 BMI_array = None
 ```
 
@@ -93,7 +92,7 @@ BMI_array = None
 
 
 ```python
-#Your code here
+# Your code here
 identity = None
 identity
 ```
@@ -103,7 +102,8 @@ The resulting product should have the same values as your original BMI numpy arr
 
 
 ```python
-#Your code here
+# Your code here
+
 ```
 
 ## Level Up: Using NumPy to Parse a File
@@ -111,17 +111,20 @@ The Pandas library that we've been using is built on top of NumPy; all columns/s
 
 
 ```python
-#Open a text file (csv files are just plaintext separated by commas)
+# Open a text file (csv files are just plaintext separated by commas)
 f = open('bp.txt')
 n_rows = len(f.readlines())
-print('The file has {} lines.'.format(n_rows)) #Print number of lines in the file
-f = open('bp.txt') #After using readlines, we must reopen the file
-n_cols = (len(f.readline().split('\t'))) #The file has values separated by tabs; we read the first line and check it's length.
+# Print number of lines in the file
+print('The file has {} lines.'.format(n_rows)) 
+# After using readlines, we must reopen the file
+f = open('bp.txt') 
+# The file has values separated by tabs; we read the first line and check it's length 
+n_cols = (len(f.readline().split('\t'))) 
 
 f = open('bp.txt')
 
-#Your code here
-#Pseudocode outline below
+# Your code here
+# Pseudocode outline below
 #1) Create a matrix of zeros that is the same size of the file
 #2) Iterate through the file: "for line in f:" Hint: using enumerate will also be required
     #3) Update each row of the matrix with the new stream of data
@@ -129,9 +132,6 @@ f = open('bp.txt')
 #4) Preview your results; you should now have a NumPy matrix with the data from the file
 
 ```
-
-    The file has 21 lines.
-
 
 ## Summary
 
